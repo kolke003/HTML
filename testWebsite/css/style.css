@@ -1,0 +1,98 @@
+/* assign font style */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+/* call for background image/sizing along with minor transparancy/gradient adjustment */
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../secondaryBackgroundImage.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/* force unordered list (navigation bar) to the right side of page with spacing from edges on top and right sides*/
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+/* force unordered list (navigation bar) items to be in horizontal line */
+ul li{
+	display: inline-block;
+}
+
+/* creates unordered list item attributes (navigation bar buttons) to have color and a border with a slower color fill transition */
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid #fff transparent;
+	transition: 0.6s ease;
+}
+
+/* tells unordered list item attributes (navigation bar buttons) to have a hover effect and fill color */
+ul li a:hover{
+	background-color: #D8121C;
+	color: #fff;
+}
+
+/* tells 'home' button to be active and auto fill the background color to notify user they are on the home page */
+ul li.active a{
+	background-color: #D8121C;
+	color: #fff;
+}
+
+/* positions logo class image into top left with spacing from edges on top and left sides */
+.logo img{
+	float: left;
+	width: 200px;
+	height: auto;
+	margin-top: -35px;
+}
+
+/* tells header to set max dimensions */
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* tells title positioning information (eg. center on page)*/
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* gives title attribute font sizing dimensions and color specs */
+.title h1{
+	color: #fff;
+	font-size: 70px;
+}
+
+/* tells button class positioning information (eg. center on page, below 'title') */
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* tells btn class to have color and a border with a slower color fill transition */
+.btn{
+	border: 1px solid #fff transparent;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+/* tells btn class to have a hover effect and fill */
+.btn:hover{
+	background-color: #D8121C;
+	color: #fff;
+}
